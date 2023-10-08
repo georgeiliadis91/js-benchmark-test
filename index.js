@@ -2,10 +2,10 @@ console.log("Giving time to run the perf test on the node console");
 
 setTimeout(() => {
 
-    const ARRA_SIZES = [100_000];
+    const ARRA_SIZES = [10_000,100_000];
 
     function intArray(n){
-        return new Array(n).fill(0).map((_,) => Math.floor(Math.random() * 100));
+        return new Array(n).fill(0).map(() => Math.floor(Math.random() * 100));
     }
 
     function addOneToEverything(arr){
